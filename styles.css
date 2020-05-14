@@ -1,0 +1,88 @@
+/** @format */
+
+body {
+  background-color: #12475f;
+  font-family: aerial, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.showcase {
+  height: 200px;
+}
+
+.showcase > h1 {
+  font-size: 40px;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  animation-name: for-header;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes for-header {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+
+.content > p {
+  font-size: 15px;
+  position: relative;
+  left: -1500px;
+  animation-name: for-content;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  padding: 0px 30px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes for-content {
+  0% {
+    left: -1500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  opacity: 0;
+  color: white;
+  padding: 12px;
+  border: white 1px solid;
+  border-radius: 20px;
+  animation-name: for-btn;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+@keyframes for-btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn:hover {
+  background-color: black;
+  border: black;
+  transform: rotateY(180deg);
+}
